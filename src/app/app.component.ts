@@ -1,13 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the GridModule for the Grid component
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-import { AppComponent }  from './app.component';
+import { Component } from '@angular/core';
 
-@NgModule({
-  //declaration of ej2-angular-grids module into NgModule
-  imports:      [ BrowserModule, GridModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
-export class AppModule { }
+export class AppComponent {
+  title = 'carte';
+}
